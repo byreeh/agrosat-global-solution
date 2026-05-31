@@ -1,10 +1,10 @@
-import Navbar from '../components/Navbar'
+import NavbarHome from '../components/NavbarHome'
 
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-gray-950 text-white overflow-hidden">
-      <div className="relative z-20">
-        <Navbar />
+      <div className="relative z-30">
+        <NavbarHome />
       </div>
 
        <img
@@ -13,8 +13,10 @@ export default function Home() {
       />
 
       <div className="absolute inset-0 z-10 
-        bg-gradient-to-b  
-        to-black/90">
+        bg-gradient-to-b 
+        from-black/70 
+        via-black/50 
+        to-green-900/70">
       </div>
 
       <main className="relative z-20 flex flex-col items-center justify-center px-6 py-20 text-center min-h-screen">
