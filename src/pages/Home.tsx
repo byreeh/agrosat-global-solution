@@ -7,15 +7,10 @@ export default function Home() {
         <Navbar />
       </div>
 
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
+       <img
+        src="/images/agro.jpg"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source src="/videos/agro.mp4" type="video/mp4" />
-      </video>
+      />
 
       <div className="absolute inset-0 z-10 
         bg-gradient-to-b  
