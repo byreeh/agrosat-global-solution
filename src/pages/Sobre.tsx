@@ -1,8 +1,9 @@
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function Sobre() {
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <div className="min-h-screen flex flex-col bg-gray-950 text-white">
       <Navbar />
       <main className="max-w-4xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-green-400 mb-6">Sobre o AgroSat</h1>
@@ -30,6 +31,7 @@ export default function Sobre() {
           </div>
         </div>
       </main>
+      < Footer/>
     </div>
   )
 }

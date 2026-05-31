@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 interface Plantacao {
   id: number
@@ -89,6 +90,7 @@ export default function Monitoramento() {
             </Link>
           </div>
         </section>
+        < Footer/>
       </div>
       )
 }

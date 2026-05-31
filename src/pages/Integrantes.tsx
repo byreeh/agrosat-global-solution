@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar"
+import Footer from '../components/Footer'
 
 interface TeamMember {
   id: number
@@ -96,6 +97,7 @@ export default function Integrantes() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

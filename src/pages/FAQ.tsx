@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import { useState } from 'react'
 
 interface FAQItem {
@@ -39,7 +40,7 @@ export default function FAQ() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <div className="min-h-screen flex flex-col bg-gray-950 text-white">
       <Navbar />
 
       <section className="py-16 px-6 border-b border-gray-800 bg-gradient-to-br from-green-900/20 to-gray-900">
@@ -72,6 +73,7 @@ export default function FAQ() {
           ))}
         </div>
       </section>
+      < Footer/>
     </div>
   )
 }
