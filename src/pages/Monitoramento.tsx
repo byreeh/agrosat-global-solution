@@ -1,8 +1,9 @@
 import Navbar from '../components/Navbar'
 
-export default function Sobre() {
-  return <div>
+export default function Monitoramento() {
+  return (<div><Navbar />
     <div>Monitoramento</div>
-    <Navbar />
+    
     </div>
+    )
 }
