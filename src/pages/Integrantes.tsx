@@ -1,19 +1,9 @@
 import Navbar from "../components/Navbar"
 import Footer from '../components/Footer'
-
-interface TeamMember {
-  id: number
-  nome: string
-  rm: string
-  turma: string
-  foto: string
-  linkedin: string
-  github: string
-  email: string
-}
+import type { Integrante } from '../types/index'
 
 export default function Integrantes() {
-  const integrantes: TeamMember[] = [
+  const integrantes: Integrante[] = [
     {
       id: 1,
       nome: "Ilda Afonso",

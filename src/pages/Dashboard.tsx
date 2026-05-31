@@ -1,16 +1,7 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
-
-interface Plantacao {
-  id: number
-  nome: string
-  area: string
-  status: string
-  umidade: number
-  temperatura: number
-  risco: 'baixo' | 'médio' | 'alto'
-}
+import type { Plantacao } from '../types/index'
 
 export default function Dashboard() {
   const plantacoes: Plantacao[] = [

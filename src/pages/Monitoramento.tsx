@@ -1,18 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-
-interface Plantacao {
-  id: number
-  nome: string
-  area: string
-  status: string
-  umidade: number
-  temperatura: number
-  risco: 'baixo' | 'médio' | 'alto'
-  descricao: string
-  satelite: string
-}
+import type { Plantacao } from '../types/index'
 
 export default function Monitoramento() {
   const { id } = useParams()

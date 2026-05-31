@@ -1,12 +1,7 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { useState } from 'react'
-
-interface FAQItem {
-  id: number
-  pergunta: string
-  resposta: string
-}
+import type { FAQItem } from '../types/index'
 
 export default function FAQ() {
   const [aberto, setAberto] = useState<number | null>(null)
