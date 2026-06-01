@@ -40,14 +40,39 @@ export default function Dashboard() {
           <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-900/95 to-transparent"></div>
           <div className="relative max-w-6xl mx-auto flex justify-between items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-green-400 mb-4">Dashboard</h1>
-            <p className="text-lg text-gray-300">Monitoramento em tempo real das suas plantações via satélite.</p>
+            <h1 className="text-3xl md:text-5xl font-bold text-green-400 mb-2">Dashboard</h1>
+            <p className=" text-sm md:text-lg text-gray-300">
+              <span className="sm:hidden">
+              Monitoramento das plantações via satélite.
+              </span>
+
+              <span className="hidden sm:inline">
+              Monitoramento em tempo real das suas plantações via satélite.
+            </span>
+              </p>
           </div>
           <Link
             to="/dashboard/nova"
-            className="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-lg font-semibold transition"
+             className="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-lg font-semibold transition flex items-center gap-2 shadow-lg shadow-green-600/30"
+            aria-label="Nova Plantação"
           >
-            + Nova Plantação
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 5v14M5 12h14"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
+            <span className="hidden sm:inline">
+              Nova Plantação
+            </span>
           </Link>
           </div>
         </section>
