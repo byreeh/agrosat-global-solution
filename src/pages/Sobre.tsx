@@ -18,15 +18,21 @@ export default function Sobre() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           <div className="bg-gray-800 p-6 rounded-lg">
-            <h2 className="text-green-400 text-xl font-bold mb-2">🛰️ Satélites</h2>
+            <h2 className="flex justify-center text-green-400 text-xl font-bold mb-2">
+              <img src="/icons/satellite-svgrepo-com.svg" alt="Icone de satélites" className="w-12 h-7" />
+              Satélites</h2>
             <p className="text-gray-400">Dados orbitais em tempo real para monitoramento preciso das lavouras.</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg">
-            <h2 className="text-green-400 text-xl font-bold mb-2">🌱 Agricultura</h2>
+            <h2 className="flex justify-center text-green-400 text-xl font-bold mb-2">
+              <img src="/icons/wheat-paddy-farm-agriculture-svgrepo-com.svg" alt="Icone de Agricultura" className="w-12 h-8" />
+              Agricultura</h2>
             <p className="text-gray-400">Soluções tecnológicas acessíveis para pequenos e médios agricultores.</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg">
-            <h2 className="text-green-400 text-xl font-bold mb-2">📊 Dados</h2>
+            <h2 className="flex justify-center text-green-400 text-xl font-bold mb-2">
+              <img src="/icons/graphic-growing-svgrepo-com.svg" alt="Icone de Dados" className="w-12 h-6 mt-1" />
+              Dados</h2>
             <p className="text-gray-400">Análise inteligente de dados para previsão de clima e produtividade.</p>
           </div>
         </div>

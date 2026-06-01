@@ -7,7 +7,9 @@ export default function NavbarHome() {
     return(
         <nav className="w-full text-white px-6 py-4 items-center justify-between backdrop-blur-md fixed top-0 z-50">
             <div className="flex items-center justify-between">
-        <Link to="/" className='text-xl font-bold'>🛰️ AgroSat</Link>
+        <Link to="/" className='flex text-xl font-bold'>
+        <img src="/icons/AgroSat.svg" alt="AgroSat Logo" className="w-12 h-8" />
+        AgroSat</Link>
 
             <div className='hidden md:flex gap-6'>
                 <Link to="/" className='hover:text-green-300 transition'>Home</Link>
