@@ -33,11 +33,15 @@ export default function Dashboard() {
     <div className="min-h-screen bg-gray-950 text-white">
         <Navbar />
 
-        <section className="py-16 px-6 border-b border-gray-800 bg-gradient-to-br from-green-900/20 to-gray-900">
-          <div className="max-w-6xl mx-auto flex justify-between items-center">
+        <section className="relative py-16 px-6 border-b border-gray-800 overflow-hidden">
+          <div className="absolute inset-0">
+            <img src="/images/satelite-agricultura.png" alt="Plantação" className="w-full h-full object-cover"/>
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-900/95 to-transparent"></div>
+          <div className="relative max-w-6xl mx-auto flex justify-between items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-green-400 mb-4">Dashboard</h1>
-            <p className="text-lg text-gray-400">Monitoramento em tempo real das suas plantações via satélite.</p>
+            <p className="text-lg text-gray-300">Monitoramento em tempo real das suas plantações via satélite.</p>
           </div>
           <Link
             to="/dashboard/nova"

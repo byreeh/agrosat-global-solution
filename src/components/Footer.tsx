@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div>
           <p className="flex text-white font-bold text-lg">
-            <img src="/icons/AgroSat.svg" alt="AgroSat Logo" className="w-12 h-8" />
+            <img src="/icons/AgroSat.svg" alt="AgroSat Logo" className="w-10 h-8" />
             AgroSat</p>
           <p className="text-sm mt-2">Monitoramento agrícola via satélite.</p>
         </div>
