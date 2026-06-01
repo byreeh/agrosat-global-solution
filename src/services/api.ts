@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3001'
+const BASE_URL = 'https://agrosat-api.onrender.com'
 
 export async function getPlantacoes() {
   const response = await fetch(`${BASE_URL}/plantacoes`)
