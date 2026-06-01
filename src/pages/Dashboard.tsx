@@ -52,11 +52,11 @@ export default function Dashboard() {
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div className="bg-gray-900 border border-gray-800 rounded-xl p-6">
               <p className="text-gray-400 text-sm mb-1">Total de Área</p>
-              <p className="text-3xl font-bold text-green-400">490 ha</p>
+              <p className="text-3xl font-bold text-green-400">{plantacoes.reduce((total, p) => total + parseInt(p.area), 0)} h</p>
             </div>
             <div className="bg-gray-900 border border-gray-800 rounded-xl p-6">
               <p className="text-gray-400 text-sm mb-1">Plantações Monitoradas</p>
-              <p className="text-3xl font-bold text-green-400">4</p>
+              <p className="text-3xl font-bold text-green-400">{plantacoes.length}</p>
             </div>
             <div className="bg-gray-900 border border-gray-800 rounded-xl p-6">
               <p className="text-gray-400 text-sm mb-1">Alertas Ativos</p>
