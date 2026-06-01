@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# AgroSat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Plataforma de monitoramento agrícola via satélite — Global Solution 2026/1 FIAP
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O AgroSat é uma plataforma inovadora que utiliza dados de satélites para auxiliar agricultores brasileiros a monitorar suas plantações, prever condições climáticas e tomar decisões mais inteligentes no campo. Desenvolvido como parte da Global Solution 2026 da FIAP, o projeto conecta a economia espacial com problemas reais do agronegócio brasileiro.
 
-## React Compiler
+## Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- Vite
+- TypeScript
+- Tailwind CSS
+- React Router DOM
+- JSON Server
 
-## Expanding the ESLint configuration
+## Estrutura de Pastas
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── NavbarHome.tsx
+│   └── Footer.tsx
+├── pages/
+│   ├── Home.tsx
+│   ├── Sobre.tsx
+│   ├── FAQ.tsx
+│   ├── Integrantes.tsx
+│   ├── Dashboard.tsx
+│   ├── Monitoramento.tsx
+│   ├── NovaPlantacao.tsx
+│   └── EditarPlantacao.tsx
+├── types/
+│   └── index.ts
+└── services/
+└── api.ts
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Integrantes
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Ilda Adosfo - RM: 568233 | Turma: 1TDSPA
+- Renata Lessa - RM: 568510 | Turma: 1TDSPR 
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Como Usar
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Repositório
+[github.com/byreeh/agrosat-global-solution](https://github.com/byreeh/agrosat-global-solution)
+
+### Executar localmente
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### API
+URL da API: https://agrosat-api.onrender.com/plantacoes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Deploy
+URL: https://agrosat-global-solution.vercel.app/
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Vídeo
+Link: 
+
+## Contato
+
+Em caso de dúvidas, entre em contato pelos links do LinkedIn acima.
