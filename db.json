@@ -1,10 +1,60 @@
 {
   "plantacoes": [
-    { "id": 1, "nome": "Soja - Setor A", "area": "150 ha", "status": "Saudável", "umidade": 72, "temperatura": 24, "risco": "baixo", "descricao": "Plantação em ótimas condições.", "satelite": "Sentinel-2" },
-    { "id": 2, "nome": "Milho - Setor B", "area": "80 ha", "status": "Atenção", "umidade": 45, "temperatura": 31, "risco": "médio", "descricao": "Umidade abaixo do ideal.", "satelite": "Landsat-8" },
-    { "id": 3, "nome": "Café - Setor C", "area": "60 ha", "status": "Crítico", "umidade": 28, "temperatura": 36, "risco": "alto", "descricao": "Situação crítica.", "satelite": "CBERS-4A" },
-    { "id": 4, "nome": "Trigo - Setor D", "area": "200 ha", "status": "Saudável", "umidade": 68, "temperatura": 22, "risco": "baixo", "descricao": "Condições favoráveis.", "satelite": "Sentinel-2" },
-    { "id": 5, "nome": "Cana-de-açúcar - Setor E", "area": "120 ha", "status": "Atenção", "umidade": 55, "temperatura": 28, "risco": "médio", "descricao": "Plantação com temperatura elevada.", "satelite": "Landsat-8" },
-    { "id": 6, "nome": "Arroz - Setor F", "area": "90 ha", "status": "Saudável", "umidade": 65, "temperatura": 27, "risco": "médio", "descricao": "Plantação em boas condições.", "satelite": "Sentinel-2" }
-  ]
+    {
+      "id": "1",
+      "nome": "Soja - Setor A",
+      "area": "150 ha",
+      "status": "Saudável",
+      "umidade": 72,
+      "temperatura": 24,
+      "risco": "baixo",
+      "descricao": "Plantação em ótimas condições.",
+      "satelite": "Sentinel-2"
+    },
+    {
+      "id": "2",
+      "nome": "Milho - Setor B",
+      "area": "80 ha",
+      "status": "Atenção",
+      "umidade": 45,
+      "temperatura": 31,
+      "risco": "médio",
+      "descricao": "Umidade abaixo do ideal.",
+      "satelite": "Landsat-8"
+    },
+    {
+      "id": "3",
+      "nome": "Café - Setor C",
+      "area": "60 ha",
+      "status": "Crítico",
+      "umidade": 28,
+      "temperatura": 36,
+      "risco": "alto",
+      "descricao": "Situação crítica.",
+      "satelite": "CBERS-4A"
+    },
+    {
+      "id": "4",
+      "nome": "Trigo - Setor D",
+      "area": "200 ha",
+      "status": "Saudável",
+      "umidade": 68,
+      "temperatura": 22,
+      "risco": "baixo",
+      "descricao": "Condições favoráveis.",
+      "satelite": "Sentinel-2"
+    },
+    {
+      "id": "5",
+      "nome": "Cana-de-açúcar - Setor E",
+      "area": "120 ha",
+      "status": "Atenção",
+      "umidade": 55,
+      "temperatura": 28,
+      "risco": "médio",
+      "descricao": "Plantação com temperatura elevada.",
+      "satelite": "Landsat-8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

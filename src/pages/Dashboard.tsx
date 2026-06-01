@@ -30,7 +30,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <div className="min-h-screen bg-gray-950 text-white bg-cover bg-center bg-fixed">
         <Navbar />
 
         <section className="relative py-16 px-6 border-b border-gray-800 overflow-hidden">

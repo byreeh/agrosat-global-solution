@@ -24,7 +24,7 @@ export default function Integrantes() {
       github: "https://github.com/byreeh",
       email: "lessarenata@outlook.com"
     }
-  ]
+  ] 
 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
