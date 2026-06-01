@@ -1,32 +1,40 @@
+import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { getPlantacao } from '../services/api'
 import type { Plantacao } from '../types/index'
 
 export default function Monitoramento() {
   const { id } = useParams()
+  const [plantacao, setPlantacao] = useState<Plantacao | null>(null)
+    const [loading, setLoading] = useState(true)
 
-  const plantacoes: Plantacao[] = [
-    { id: 1, nome: "Soja - Setor A", area: "150 ha", status: "Saudável", umidade: 72, temperatura: 24, risco: "baixo", descricao: "Plantação em ótimas condições. Índice de vegetação elevado e umidade ideal.", satelite: "Sentinel-2" },
-    { id: 2, nome: "Milho - Setor B", area: "80 ha", status: "Atenção", umidade: 45, temperatura: 31, risco: "médio", descricao: "Umidade abaixo do ideal. Recomenda-se irrigação nas próximas 48 horas.", satelite: "Landsat-8" },
-    { id: 3, nome: "Café - Setor C", area: "60 ha", status: "Crítico", umidade: 28, temperatura: 36, risco: "alto", descricao: "Situação crítica. Temperatura elevada e umidade muito baixa. Irrigação urgente.", satelite: "CBERS-4A" },
-    { id: 4, nome: "Trigo - Setor D", area: "200 ha", status: "Saudável", umidade: 68, temperatura: 22, risco: "baixo", descricao: "Condições favoráveis. Previsão de colheita dentro do prazo esperado.", satelite: "Sentinel-2" },
-  ]
+    useEffect(() => {
+      getPlantacao(Number(id)).then((data) => {
+        setPlantacao(data)
+        setLoading(false)
+      })
+    }, [id])
 
-  const plantacao = plantacoes.find(p => p.id === Number(id))
-
-  const corRisco = {
+  const corRisco: Record<string, string> = {
     baixo: "text-green-400 bg-green-900/30",
     médio: "text-yellow-400 bg-yellow-900/30",
     alto: "text-red-400 bg-red-900/30"
   }
 
+  if (loading) return (
+    <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center">
+      Carregando...
+    </div>
+  )
+
   if (!plantacao) {
   return (
     <div className="min-h-screen bg-gray-950 text-white">
       <Navbar />
-      <section className="py-16 px-6 text-center">
-        <h1 className="text-3xl text-red-400 font-bold mb-4">
+      <section className="flex flex-col items-center justify-center py-32">
+        <h1 className="text-4xl text-red-400 font-bold mb-4">
           Plantação não encontrada
         </h1>
         <Link to="/dashboard" className="text-green-400 hover:underline">

@@ -33,9 +33,19 @@ export default function EditarPlantacao() {
     })
   }, [id])
 
+  function calcularRisco(_umidade: number, temperatura: number): 'baixo' | 'médio' | 'alto' {
+  if (temperatura >= 35) return 'alto'
+  if (temperatura >= 26) return 'médio'
+  return 'baixo'
+}
+
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
-    setForm({ ...form, [e.target.name]: e.target.value })
+  const novoForm = { ...form, [e.target.name]: e.target.value }
+  if (e.target.name === 'umidade' || e.target.name === 'temperatura') {
+    novoForm.risco = calcularRisco(Number(novoForm.umidade), Number(novoForm.temperatura))
   }
+  setForm(novoForm)
+}
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()

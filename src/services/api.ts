@@ -11,10 +11,15 @@ export async function getPlantacao(id: number) {
 }
 
 export async function criarPlantacao(dados: object) {
+  const todas = await getPlantacoes()
+  const novoId = todas.length + 1
+  const letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+  const setor = `Setor ${letras[todas.length]}`
+
   const response = await fetch(`${BASE_URL}/plantacoes`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(dados)
+    body: JSON.stringify({ id: novoId, setor, ...dados })
   })
   return response.json()
 }
