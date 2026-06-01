@@ -34,7 +34,6 @@
       "satelite": "CBERS-4A"
     },
     {
-      "id": "4",
       "nome": "Trigo - Setor D",
       "area": "200 ha",
       "status": "Saudável",
@@ -42,7 +41,8 @@
       "temperatura": 22,
       "risco": "baixo",
       "descricao": "Condições favoráveis.",
-      "satelite": "Sentinel-2"
+      "satelite": "Sentinel-2",
+      "id": "4"
     },
     {
       "id": "5",
