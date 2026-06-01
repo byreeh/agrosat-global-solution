@@ -5,6 +5,8 @@ import Integrantes from './pages/Integrantes'
 import FAQ from './pages/FAQ'
 import Dashboard from './pages/Dashboard'
 import Monitoramento from './pages/Monitoramento'
+import NovaPlantacao from './pages/NovaPlantacao'
+import EditarPlantacao from './pages/EditarPlantacao'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/monitoramento/:id" element={<Monitoramento />} />
+        <Route path="/dashboard/nova" element={<NovaPlantacao />} />
+        <Route path="/dashboard/editar/:id" element={<EditarPlantacao />} />
       </Routes>
     </BrowserRouter>
     )
