@@ -59,7 +59,3 @@ URL: https://agrosat-global-solution.vercel.app/
 
 ### Vídeo
 Link: https://youtu.be/1-XMUDOM4Fw
-
-## Contato
-
-Em caso de dúvidas, entre em contato pelos links do LinkedIn acima.
